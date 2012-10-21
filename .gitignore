@@ -3,5 +3,8 @@
 *.bak
 *.orig
 *~
+*.iml
+.idea
+.settings
 .project
 .pydevproject
