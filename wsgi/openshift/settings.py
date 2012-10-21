@@ -108,9 +108,8 @@ default_keys = { 'SECRET_KEY': 'vm4rl5*ymb@2&d_(gc$gb-^twq9w(u69hi--%$5xrh!xk(t%
 # Replace default keys with dynamic values if we are in OpenShift
 use_keys = default_keys
 if ON_OPENSHIFT:
-    imp.find_module('openshiftlibs')
-    import openshiftlibs
-    use_keys = openshiftlibs.openshift_secure(default_keys)
+    import openshift.openshiftlibs
+    use_keys = openshift.openshiftlibs.openshift_secure(default_keys)
 
 # Make this unique, and don't share it with anybody.
 SECRET_KEY = use_keys['SECRET_KEY']
