@@ -1,8 +1,8 @@
-Opendata psp.cz on Openshift
+Opendata psp.cz on OpenShift
 ============================
 
 Implementation of REST service for parliament data from psp.cz with
-Openshift modifications.
+OpenShift customizations.
 
 Django on OpenShift
 ===================

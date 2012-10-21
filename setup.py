@@ -1,13 +1,16 @@
 #!/usr/bin/env python
-
+# coding=utf-8
 from setuptools import setup
 
 setup(
-    name='YourAppName',
+    name='OpendataPspCz',
     version='1.0',
-    description='OpenShift App',
-    author='Your Name',
-    author_email='example@example.com',
-    url='http://www.python.org/sigs/distutils-sig/',
-    install_requires=['Django>=1.3'],
+    description='Opendata psp.cz OpenShift App',
+    author='Libor Nenadál',
+    author_email='libor.nenadal@gmail.com',
+    url='http://pspcz-opendata.rhcloud.com/',
+    install_requires=['Django>=1.3',
+                      'djangorestframework',
+                      'pytz'
+    ],
 )
