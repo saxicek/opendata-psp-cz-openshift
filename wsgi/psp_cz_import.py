@@ -41,9 +41,6 @@ class PspCzImport(object):
         import_all(self.data_dir)
 
 def main():
-    os.environ['DJANGO_SETTINGS_MODULE'] = 'openshift.settings'
-    sys.path.append(os.path.join(os.environ['OPENSHIFT_REPO_DIR'], 'wsgi', 'openshift'))
-
     parser = OptionParser()
     parser.add_option("-d", "--dir", dest="data_dir",
                       help="directory with psp.cz export files")
